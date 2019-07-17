@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="/static/css/searchButtonStyle.css">
+<div class="listContainer">
+    <div class="row headerContainer">
+  <div class="col s12 m5 ">
+    <p class="headerText">Desease List</p>
+  </div>
+  <div class="col s12 m7">
+    <div class="searchContainer">
+      <input placeholder="Search Desease" class="searchInput" type="text" />
+      <a href="#" class="btn transparent searchButton"><i class="material-icons searchButtonIcon">search</i></a>
+    </div>
+  </div>
+</div> 
+
+
+{{#each deseaseData}}
+<div class="row deseaselistContainer">
+    <div class="col s12 m10" >
+        <div class="row deseasename">
+            <div class="col s6 m3 deseasecontent">
+                {{this.deseaseName}}
+            </div>
+            <div class="col s6 m6 dateLabel">
+                10/07/2018
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m2 listbutton">
+        <a href="/services/deseasefinder/update/{{this._id}}" class="btn themeButton editButton">Edit</a>
+        <a href="/services/deseasefinder/delete/{{this._id}}"><i class="material-icons iconstyle">delete</i></a>
+    </div>
+</div>
+{{/each}}
+</div>

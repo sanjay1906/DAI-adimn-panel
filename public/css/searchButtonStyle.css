@@ -1,0 +1,7 @@
+input:not([type]),
+input[type]:not(.browser-default),
+input[type]:not(.browser-default):focus:not([readonly]) {
+  height: 2rem;
+  outline: none !important;
+  border: none !important;
+}

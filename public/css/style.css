@@ -1,0 +1,558 @@
+:root {
+    --themcolor: #1E90FF;
+    --secondsvg: #FFD54F;
+    --firstsvg: #4CAF50;
+    --snow : #FFFFFF;
+    --black:#2C3335;
+    --paragraph:#616C6F;
+}
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+/* **************************** */
+/* Global CSS */
+
+.themeButton{
+    border:1px solid #1e99ff;  
+    background-color: #fff;
+    border-radius: 1rem;
+    padding:0rem 2rem;
+    color:var(--themcolor);
+    box-shadow: none !important;
+    transition: all 150ms ease-in;
+}
+.themeButton:hover{
+    background-color: #1e99ff;
+    color:#fff !important;
+}
+.themeButton:active{
+    border: 1.5px solid var(--themcolor);
+    background-color: #ffffff;
+    color: var(--themcolor) !important;
+}
+.themeButton:focus{
+    border: 1.5px solid var(--themcolor);
+    background-color: #ffffff;
+    color: var(--black)  !important;
+}
+@media (max-width:800px){
+    .themeButton{
+        font-size:0.65rem !important;
+        margin:0rem;
+    }
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+/* ****************************** */
+
+/* *************************************************************** */
+/* starting Of Navigation */
+.nav-wrapper {
+    background-color: #1E90FF;
+}
+
+.brand-logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem !important;
+    font-weight: 400;
+}
+
+.logo-text {
+    font-size: 25px !important;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.center-text {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#click-icon {
+    list-style-type: none;
+}
+
+#click-icon i {
+    position: absolute !important;
+    top: 0;
+    left: 20px !important;
+
+}
+
+.nav-wrapper i {
+    position: relative;
+    left: 15% !important;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 30px !important;
+}
+
+/* *************************************************************** */
+/* Ending Of Navigation */
+
+
+/* *************************************************************** */
+/* Starting Of Sidedrawer */
+
+.sidemenuIcon {
+    color:#757575;
+}
+.sidemenuText{
+    color: #757575;
+    text-align: center;
+}
+.menuContainer{
+    padding:1rem 2rem;
+    transition: all 150ms ease-in;
+}
+.menuContainer:hover .sidemenuIcon,
+.menuContainer:hover .sidemenuText{
+    color:var(--snow);
+}
+.menuContainer:hover{
+    background-color: var(--themcolor);
+}
+
+@media (max-width:600px){
+    .sidemenuText{
+        display: none;
+    }
+}
+
+/* Ending Of Sidedrawer */
+/* *************************************************************** */
+
+/* Starting Of Home Page css */
+/* *************************************************************** */
+
+
+
+.card-content i {
+    color: var(--themcolor);
+    font-size: 70px;
+}
+
+.card {
+    height: 100% !important;
+}
+
+.User,
+.devloper {
+    color: #757575;
+    font-size: 0.9375rem !important;
+    position: absolute;
+    right: 1.25rem;
+    top: 0.625rem;
+}
+
+
+.num {
+    color: #757575;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+.svg-icon_1 {
+    height: 100%;
+    width: 100%;
+    fill: var(--firstsvg);
+}
+
+.svg-icon_2 {
+    height: 100%;
+    width: 100%;
+    fill: var(--secondsvg);
+}
+
+.svg-icon_3 {
+    height: 100%;
+    width: 100%;
+    fill: var(--themcolor);
+}
+
+/*logo images*/
+/*logo*/
+.img-responsive {
+    height: 18rem !important;
+    width: 18rem !important;
+    margin-bottom: 2rem;
+
+}
+
+/*media for small scree*/
+@media (max-width:600px) {
+
+    .nav-wrapper i {
+        position: relative;
+        left: 3% !important;
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+
+    .side-nav {
+        margin: 0.875px 0px;
+    }
+
+    .card-section {
+        margin-right: 0.2rem;
+    }
+}
+
+
+/* Ending Of Home Page css */
+/* *************************************************************** */
+
+/* Starting Of Footer css */
+/* *************************************************************** */
+
+.footer {
+    background-color: var(--themcolor);
+    border:1px solid transparent;
+}
+
+footer h6 {
+    font-size: 1.3rem !important;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.9rem !important;
+    text-align: center;
+
+}
+
+.footer i {
+    color: #FF3031;
+    font-size: 1rem;
+
+}
+
+/* Ending Of Footer css */
+/* *************************************************************** */
+
+.card{
+    justify-content: center !important;
+    align-content: center !important;
+    display: flex !important;
+    margin:1rem;
+    height:100%;
+    padding:0 1rem;
+}
+
+.services-button{
+    margin-top:1rem !important;
+    border:1px solid var(--themcolor);  
+    background-color: var(--snow);
+    border-radius: 1rem;
+    padding:0rem 3rem;
+    color:var(--black);
+    transition: all 150ms ease-in;
+    box-shadow: none;
+}
+.services-header{
+    font-weight: bold !important;
+    font-size: 1.4rem !important;
+    transition: all 150ms ease-in;
+
+}
+.services-summary{
+    color:var(--paragraph);
+}
+.card:hover .services-button{
+    background-color: var(--themcolor);
+    color:var(--snow) !important;
+    box-shadow: none;
+}
+.card:hover .services-header{
+    color:var(--themcolor) !important;
+}
+.services-icon{
+    font-size: 2.5rem !important;
+}
+
+.service-container{
+    margin:2rem 2rem;
+}
+@media (max-width:600px){
+    .service-container{
+        margin:0;
+    }
+}
+
+/* ************************************** */
+/* Error Page */
+
+
+
+.error {
+    height: 100%;
+    width: 100%;
+
+}
+
+.error-heading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h4 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.header p {
+    font-weight: 500;
+    font-size: 1.0rem;
+
+}
+
+.header-img img {
+    height: 25rem;
+}
+
+/* *********** */
+/* Starting Of Desease Finder Home Screen */
+.nurseImage{
+    width: 70%;
+    }
+.deseaseContainer p{
+    font-size: 1rem;
+    text-align: justify;
+    color: #b7b7b7;
+}
+/* Ending Of Desease Finder Home Screen */
+
+/* starting Of deseaseform css */
+
+input[type="text"]{
+    outline: none !important;
+    border:1px solid var(--themcolor) !important;
+    box-shadow: none !important;
+    margin: 0rem 0rem 0rem 0rem !important;
+    border-radius: 0.5rem !important;
+    padding:0rem 1rem !important;
+}
+input[type="text"]:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.input-textarea{
+    outline: none !important;
+    border:1px solid var(--themcolor) !important;
+    border-radius: 0.5rem !important;
+    overflow: hidden;
+}
+textarea{
+    height: 6rem;
+    width: 105% !important; 
+    padding:1rem 1rem !important;
+    resize: none;
+}
+
+.labelContainer{
+    margin-bottom:1rem;
+
+}
+.labelContainer label{
+    font-size: 1rem;
+    color: var(--black);
+
+}
+@media (max-width:1000px){
+    textarea{
+        width:110% !important;
+    }
+}
+
+/* Ending Of deseaseform css */
+
+/*---------------------------------------desease list ---------------------------------------------------*/
+
+.info {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.block-section .row {
+
+    margin: 0.0rem 0px;
+    border-bottom: 1px solid black;
+
+}
+
+
+.block-section {
+    width: 100%;
+    height: auto;
+
+}
+
+.row-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.row-content div:nth-child(1) {
+    display: flex;
+    flex-grow: 1;
+    color: var(--themcolor);
+    font-weight: 400;
+    flex-basis: 20rem !important;
+    margin-right: 1.0rem !important;
+   
+}
+
+.row-content div:nth-child(2) {
+    flex-grow: 150;
+    
+}
+
+.row-content div:nth-child(3) {
+    flex-grow: 1;
+}
+
+
+.row-content div:nth-child(4) {
+    display: flex;
+    flex-grow: 1;
+
+}
+
+/*content*/
+.row-content p {
+    font-size: 1.1rem;
+}
+
+.row-content label {
+    margin: 0px 15px;
+}
+
+.row-content .btn {
+
+    padding: 0px 1.8rem !important;
+    background-color: #fff;
+    color: #1E90FF;
+    border-radius: 20rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0.7rem 0px 0.7rem 0rem;
+    border: 1px solid var(--themcolor);
+    transition: all 150ms ease-in;
+    box-shadow: none;
+
+}
+
+.row-content .btn:hover {
+    background-color: var(--themcolor);
+    color: #FFFFFF;
+}
+
+
+div hr{
+ border-color: #1E90FF;
+}
+/***************************** serch box *************************************/
+
+
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--themcolor);
+    border-radius: 1rem;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .searchInput {
+    outline: none !important;
+    border: none !important;
+    margin-bottom: -0.08rem !important;
+    color: var(--themcolor);
+  }
+  .searchInput::placeholder {
+    color: var(--themcolor);
+    font-size: 0.9rem;
+  }
+
+  
+  .searchButton {
+    box-shadow: none;
+    padding: 0rem 2rem;
+    background-color: #1e90ff !important;
+    height: 100%;
+    border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+  }
+  .searchButton:hover {
+    box-shadow: none;
+  }
+  .searchButtonIcon {
+    color: var(--snow);
+  }
+  @media (max-width: 600px) {
+    .headerText {
+      text-align: center;
+    }
+  }
+
+/*********************pagination*******************************/
+
+
+/*---------------------------------------desease list ---------------------------------------------------*/
+
+.deseasecontent{
+    color:var(--themcolor);
+    font-size:1rem; 
+}
+.dateLabel{
+    color: #d7d7d7; 
+    font-size:1rem;
+}
+.deseaselistContainer{
+    border-bottom:1px solid #757575;
+}
+.deseaselist{
+    border-bottom:1px solid black;
+}
+.deseasename{
+    margin:0.5rem 0rem;
+}                      
+.listbutton{
+    display:flex;
+    justify-content:space-between;
+    margin:0.2rem 0rem;
+}
+.iconstyle{
+    color:red;
+    font-size: 2.2rem;
+}
+.editButton{
+    font-size:0.8em;
+}
+.listContainer{
+    margin:0rem 3rem;
+}
+@media (max-width:600px){
+    .dateLabel{
+        text-align:end;
+    }
+    .listContainer{
+        margin:0rem;
+    }
+}
+                                                   /* end desease list */
+
+        
