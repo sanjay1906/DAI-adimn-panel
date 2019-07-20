@@ -1,1 +1,154 @@
-<p>malaria Home</p>
+
+
+
+<div class="row" style="width: 90%;">
+
+<div class=" row col s12 m12" style="margin-top:3rem;">
+    <div class="col s12 m3" style="text-align:start;">
+        <img src="/static/images/image.jpg" class="responsive-img ">
+    </div>
+    <div class="row center col s12 m9">
+            <div class="row titlename">
+                Results
+                <center><div style="border-bottom:2px solid #1E90FF;width:6rem"></div></center>
+            </div >
+                <div class="row smallfont" style="font-weight: 500; font-size:1.2rem;">
+                        <div class="col s6 m6">Type</div>
+                        <div class="col s6 m6" style="color: #b7b7b7;">infected</div> 
+                </div>
+                <div class="row smallfont" style="font-weight: 500; font-size:1.2rem;">
+                        <div class="col s6 m6">Accuraty</div>
+                        <div class="col s6 m6" style="color: #b7b7b7;">97%</div> 
+                </div>
+                <div class="row smallfont" style="font-weight: 500; font-size:1.2rem;">
+                        <div class="col s6 m6">images size</div>
+                        <div class="col s6 m6" style="color: #b7b7b7;">200 * 200</div> 
+                </div>
+        </div>
+</div>
+
+ {{!-- summary --}}
+
+<div class="row col s12 m12">
+    <div class="col s12 m12 titlename">
+        Summary
+    </div>
+    <div class="col s12 m12" style=" font-size: 1rem;text-align: justify;color: #b7b7b7;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis blanditiis obcaecati cupiditate. Repellendus, esse qui? Cupiditate dignissimos pariatur ratione tempora odit earum? Non similique neque rem natus, possimus eveniet.</p>
+    </div>
+</div>
+
+{{!-- hospital --}}
+
+<div class="col s12 m12">
+        <div class="col s12 m12 titlename">
+            Nearby hospitals 
+        </div>
+        <div class="col s6 m12" style="margin-top:2rem;">
+            <div id="map" class="col s12 m7 mapstyle">
+        </div>
+            <div class="col s12 m5 hospitalName" style="text-align:center;">
+                 <p>kishan hospital ahmedabad</p>
+                 <p>sanjay hospital ahmedabad</p>
+                 <p>nitin hospital ahmedabad</p>
+                 <p>vikram hospital ahmedabad</p>
+            </div>
+        </div>
+</div>
+
+{{!-- ola booking --}}
+
+<div class="row col s12 m12" style="margin-top:2rem;">
+    <div class="col s12 m12  titlename">
+            book ola
+    </div>
+    <div class="row col m12" style="text-align: center;margin-top:2rem;">
+        <div class="col s12 m4">
+            <input placeholder="pickup location" class="inputstyle">
+        </div>
+        <div class="col s12 m4">
+            <input placeholder="pickup location" class="inputstyle">
+        </div>
+        <div class="col s12 m4">
+            <button class="btn themeButton smallfont">book now</button>
+        </div>
+    </div>
+     <div class="col s12 m12" style="text-align: center;">
+            <button class="btn themeButton smallfont">back</button>
+    </div>
+</div>
+
+</div>
+
+<script>
+  function initMap() {
+      var options = {
+          zoom:5,
+          center:{lat:20.5937, lng:78.9629}
+      }
+      var map = new 
+      google.maps.Map(document.getElementById('map'), options);
+
+      var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png' ;
+      var marker = new google.maps.Marker({
+          position: {lat:22.2587, ing:71.1924},
+           map: map,
+           icon: image
+           });
+      }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsKTQL9BR_lIJzeWkCRb8S-NBr-i-FJIM&callback=initMap">
+</script>
+
+
+
+{{!-- /*css*/
+
+ /*malaria*/
+
+
+.titlename{
+    font-size: 2rem;
+}
+.hospitalName p{
+    font-size: 1.5rem;
+    color: #1E90FF;
+}
+.mapstyle{
+    height: 20rem;
+    width: 0rem; 
+    background-color: grey;
+}
+.inputstyle{
+    outline: none !important;
+    border:1px solid #1e99ff !important; 
+    box-shadow: none !important;
+    border-radius: 0.5rem !important;
+}
+::placeholder{
+    text-align: center;
+}
+
+
+
+
+@media (max-width:600px){
+
+    .smallfont{
+         font-size: 1rem;
+    }
+    .titlename{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .hospitalName p{
+        font-size: 1.1rem;
+    }
+    .themeButton{
+        font-size:2rem;
+    }
+}
+
+                                                            /* malaria end */
+ --}}
